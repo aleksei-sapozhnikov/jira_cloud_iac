@@ -1,0 +1,30 @@
+{
+  "terraform-demo": {
+    "key": "TFDEMO",
+    "name": "Terraform Demo",
+    "management": "team",
+    "project_type_key": "software",
+    "project_template_key": "com.pyxis.greenhopper.jira:gh-simplified-agility-scrum",
+    "description": "Team-managed Scrum space created by Terraform.",
+    "assignee_type": "PROJECT_LEAD"
+  },
+  "terraform-kanban": {
+    "key": "TFKAN",
+    "name": "Terraform Kanban",
+    "management": "team",
+    "project_type_key": "software",
+    "project_template_key": "com.pyxis.greenhopper.jira:gh-simplified-agility-kanban",
+    "description": "Team-managed Kanban space created by Terraform.",
+    "assignee_type": "PROJECT_LEAD"
+  },
+  "terraform-classic": {
+    "key": "TFCLS",
+    "name": "Terraform Classic Scrum",
+    "management": "company",
+    "project_type_key": "software",
+    "project_template_key": "com.pyxis.greenhopper.jira:gh-simplified-scrum-classic",
+    "description": "Company-managed Scrum space created by Terraform.",
+    "assignee_type": "PROJECT_LEAD",
+    "configuration_profile": "software-standard"
+  }
+}
