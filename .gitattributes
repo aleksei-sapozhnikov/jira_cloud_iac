@@ -1,0 +1,18 @@
+# Normalize all detected text files and store them in Git with LF endings.
+* text=auto eol=lf
+
+# Windows command files must use CRLF to run reliably in cmd.exe.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Explicitly mark common binary files to prevent line-ending conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.jar binary
+*.woff binary
+*.woff2 binary

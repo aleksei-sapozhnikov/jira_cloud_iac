@@ -1,0 +1,158 @@
+# -----------------------------------------------------------------------------
+# Secrets and local environment variables
+# -----------------------------------------------------------------------------
+
+# Common dotenv files.
+.env
+.env.*
+
+# Files such as dev.env, local.env, production.env.
+*.env
+
+# Safe templates that may be committed.
+!.env.example
+!.env.template
+
+# Private keys and certificates.
+*.pem
+*.key
+*.p12
+*.pfx
+
+
+# -----------------------------------------------------------------------------
+# Node.js / React
+# -----------------------------------------------------------------------------
+
+# Installed dependencies.
+node_modules/
+
+# Package-manager caches.
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Logs.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build output.
+dist/
+build/
+out/
+
+# Test coverage.
+coverage/
+.nyc_output/
+*.lcov
+
+# Tool and bundler caches.
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+.next/
+
+# TypeScript incremental compilation cache.
+*.tsbuildinfo
+
+# ESLint and Stylelint caches.
+.eslintcache
+.stylelintcache
+
+
+# -----------------------------------------------------------------------------
+# Terraform
+# -----------------------------------------------------------------------------
+
+# Local provider and module downloads.
+.terraform/
+.terraform.d/
+
+# Local state. State may contain sensitive information.
+*.tfstate
+*.tfstate.*
+
+# Saved execution plans.
+*.tfplan
+tfplan
+
+# Crash logs.
+crash.log
+crash.*.log
+
+# Local Terraform CLI configuration, which may contain credentials.
+.terraformrc
+terraform.rc
+
+# Local variable files that may contain secrets.
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+*.secret.tfvars
+*.secret.tfvars.json
+
+# Local override files.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep .terraform.lock.hcl under version control.
+
+
+# -----------------------------------------------------------------------------
+# Editors and IDEs
+# -----------------------------------------------------------------------------
+
+.idea/
+.vscode/
+
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+
+# -----------------------------------------------------------------------------
+# Operating-system files
+# -----------------------------------------------------------------------------
+
+# macOS.
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows.
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# -----------------------------------------------------------------------------
+# Temporary files
+# -----------------------------------------------------------------------------
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+# -----------------------------------------------------------------------------
+# Git patch files
+# -----------------------------------------------------------------------------
+
+*.patch
