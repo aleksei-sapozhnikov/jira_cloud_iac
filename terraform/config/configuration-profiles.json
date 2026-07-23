@@ -1,0 +1,93 @@
+{
+  "software-standard": {
+    "workflow": {
+      "key": "software-standard",
+      "name": "Terraform Standard Software Workflow",
+      "description": "Standard development workflow managed by Terraform",
+      "statuses": [
+        "TF Standard To Do",
+        "TF Standard In Progress",
+        "TF Standard Done"
+      ]
+    },
+    "permission_scheme": {
+      "enabled": false,
+      "key": "software-standard",
+      "name": "Terraform Standard Software Permissions",
+      "description": "Standard permission scheme managed by Terraform",
+      "grants": [
+        {
+          "permission": "ADMINISTER_PROJECTS",
+          "holder_type": "projectLead"
+        },
+        {
+          "permission": "BROWSE_PROJECTS",
+          "holder_type": "projectLead"
+        },
+        {
+          "permission": "CREATE_ISSUES",
+          "holder_type": "projectLead"
+        },
+        {
+          "permission": "EDIT_ISSUES",
+          "holder_type": "projectLead"
+        },
+        {
+          "permission": "TRANSITION_ISSUES",
+          "holder_type": "projectLead"
+        }
+      ]
+    },
+    "screens": {
+      "key": "software-standard",
+      "name": "Terraform Standard Software Screens",
+      "description": "Standard create, edit and view screens managed by Terraform",
+      "create": {
+        "name": "Terraform Standard Create Screen",
+        "fields": [
+          "summary",
+          "issuetype",
+          "description",
+          "reporter",
+          "assignee",
+          "priority",
+          "labels"
+        ]
+      },
+      "edit": {
+        "name": "Terraform Standard Edit Screen",
+        "fields": [
+          "summary",
+          "issuetype",
+          "description",
+          "reporter",
+          "assignee",
+          "priority",
+          "labels"
+        ]
+      },
+      "view": {
+        "name": "Terraform Standard View Screen",
+        "fields": [
+          "summary",
+          "issuetype",
+          "description",
+          "reporter",
+          "assignee",
+          "priority",
+          "labels"
+        ]
+      }
+    },
+    "field_configuration": {
+      "key": "software-standard",
+      "name": "Terraform Standard Software Fields",
+      "description": "Standard field configuration managed by Terraform",
+      "required_fields": [
+        "summary",
+        "issuetype"
+      ],
+      "hidden_fields": []
+    }
+  }
+}
