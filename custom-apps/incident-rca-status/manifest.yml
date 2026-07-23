@@ -1,0 +1,35 @@
+modules:
+  jira:issueContext:
+    - key: incident-rca-status-context
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Status
+      label: Incident / RCA
+      status:
+        type: lozenge
+        value:
+          label: RCA status
+          type: default
+      dynamicProperties:
+        function: dynamic-properties
+      displayConditions:
+        issueType: Incident
+  function:
+    - key: resolver
+      handler: index.handler
+    - key: dynamic-properties
+      handler: dynamic-properties.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/86b27cea-7873-4f2d-9d3a-fe86f58da866
+permissions:
+  scopes:
+    - read:jira-work
